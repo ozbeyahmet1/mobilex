@@ -14,9 +14,10 @@
     "lint:eslint": "eslint --max-warnings=0 --ignore-path .gitignore --ext .js,.ts,.tsx .",
     "lint:stylelint": "stylelint --ignore-path .gitignore '**/*.css'",
     "lint:typescript": "tsc --noEmit",
-    "tailwind":"npx tailwindcss -i ./src/styles.css -o ./src/output.css --watch"
+    "tailwind": "npx tailwindcss -i ./src/styles.css -o ./src/output.css --watch"
   },
   "dependencies": {
+    "framer-motion": "^11.2.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
