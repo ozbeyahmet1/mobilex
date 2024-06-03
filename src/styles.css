@@ -5,6 +5,8 @@
 body {
   display: block;
   font-family: 'SF Pro Display', sans-serif;
-}.scroll-area::-webkit-scrollbar{
+}
+
+.scroll-area::-webkit-scrollbar {
   display: none;
 }

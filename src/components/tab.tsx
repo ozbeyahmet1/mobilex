@@ -39,7 +39,6 @@ export default function Tab({ selected, icon, text, onClick }: TabProps) {
     };
   }, [selected]);
 
-
   React.useEffect(() => {
     let interval: number | undefined;
     if (!selected) {
@@ -61,16 +60,19 @@ export default function Tab({ selected, icon, text, onClick }: TabProps) {
   }, [selected]);
 
   return (
-    <div className={`w-fit cursor-pointer flex-1 flex items-center gap-4 py-8 px-14 z-50 relative border-solid border-x-[1px] border-y-2 hover:border-blue transition-all duration-300 ${selected ? 'bg-blue-100' : 'bg-white'} `} onClick={onClick}>
-      <div className='flex items-center justify-center'>
-        <div className='relative'>
+    <div
+      className={`w-fit cursor-pointer flex-1 flex items-center gap-4 py-8 pl-14 z-50 relative border-solid border-x-[1px] border-y-2 hover:border-blue transition-all duration-300 ${selected ? 'bg-blue-100' : 'bg-white'} `}
+      onClick={onClick}
+    >
+      <div className="flex items-center justify-center">
+        <div className="relative">
           <CircularProgressBar progress={progress} size={56} strokeWidth={1} />
-          <div className='absolute inset-0 flex items-center justify-center text-blue'>
+          <div className="absolute inset-0 flex items-center justify-center text-blue">
             {icon}
           </div>
         </div>
       </div>
-      <h1 className='text-xl text-nowrap'>{text}</h1>
+      <h1 className="text-xl text-nowrap">{text}</h1>
     </div>
   );
 }

@@ -4,7 +4,11 @@ interface CircularProgressBarProps {
   strokeWidth?: number;
 }
 
-export default function CircularProgressBar({ progress, size = 100, strokeWidth = 10 }: CircularProgressBarProps) {
+export default function CircularProgressBar({
+  progress,
+  size = 100,
+  strokeWidth = 10,
+}: CircularProgressBarProps) {
   const center = size / 2;
   const radius = (size - strokeWidth) / 2;
   const circumference = 2 * Math.PI * radius;
