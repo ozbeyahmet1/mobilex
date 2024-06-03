@@ -62,7 +62,8 @@ export const Homepage: HomepageType = {
             animate: { y: 80, x: 100, opacity: 1, scale: 1, zIndex: 50 },
             exit: { opacity: 0 },
             transition: { duration: 0.5, delay: 1.5 }
-          }
+          },
+          className: 'max-w-fit sm:w-[142px] md:w-[168px] lg:w-auto'
         },
         {
           imgSrc: 'https://res.cloudinary.com/droheqpxn/image/upload/v1717293736/hubx/signstap_pxdgnv.png',
@@ -71,7 +72,8 @@ export const Homepage: HomepageType = {
             animate: { y: 0, zIndex: 40 },
             exit: { opacity: 0 },
             transition: { duration: 1, delay: 0.5 }
-          }
+          },
+          className: 'max-w-fit sm:w-[230px] md:w-[300px] lg:w-auto'
         },
         {
           imgSrc: 'https://res.cloudinary.com/droheqpxn/image/upload/v1717293938/hubx/group_55_ypwygl.png',
@@ -80,7 +82,8 @@ export const Homepage: HomepageType = {
             animate: { y: 0, x: -100, opacity: 1, scale: 1, zIndex: 50 },
             exit: { opacity: 0 },
             transition: { duration: 0.5, delay: 1.8 }
-          }
+          },
+          className: 'max-w-fit sm:w-[142px] md:w-[168px] lg:w-auto'
         }
       ],
       header: 'Sign & Stamp',
@@ -98,35 +101,38 @@ export const Homepage: HomepageType = {
             animate: { position: "absolute", top: 0, left: 0, zIndex: 2 },
             exit: { opacity: 0 },
             transition: { duration: 0.9, delay: 0.4 }
-          }
+          },
+          className: 'max-w-fit w-[250px] md:w-[300px] lg:w-auto'
         },
         {
           imgSrc: 'https://res.cloudinary.com/droheqpxn/image/upload/v1717297445/hubx/File_Preview_nfrgnh.png',
           animation: {
-            initial: { position: "absolute", top: 600, left: 65, zIndex: 4 },
-            animate: { position: "absolute", top: 120, left: 65, zIndex: 4 },
+            initial: { position: "absolute", top: 600, zIndex: 4 },
+            animate: { position: "absolute", top: 120, zIndex: 4 },
             exit: { opacity: 0 },
             transition: { duration: 0.5, delay: 1.1 }
-          }
+          },
+          className: 'max-w-fit w-[165px] md:w-[200px] lg:w-[245px] left-[40px] md:left-[50px] lg:left-[60px]'
         },
         {
           imgSrc: 'https://res.cloudinary.com/droheqpxn/image/upload/v1717297446/hubx/File_Preview-1_ficpvf.png',
           animation: {
-            initial: { position: "absolute", top: 600, left: 45, zIndex: 4 },
-            animate: { position: "absolute", top: 130, left: 45, zIndex: 4 },
+            initial: { position: "absolute", top: 600, zIndex: 4 },
+            animate: { position: "absolute", top: 130, zIndex: 4 },
             exit: { opacity: 0 },
             transition: { duration: 0.5, delay: 1.5 }
-          }
+          },
+          className: 'max-w-fit left-[30px] md:left-[36px] lg:left-[45px] w-[188px] md:w-[230px] lg:w-[273px] '
         },
-
         {
           imgSrc: 'https://res.cloudinary.com/droheqpxn/image/upload/v1717297445/hubx/File_Preview-2_uv9snx.png',
           animation: {
-            initial: { position: "absolute", top: 600, left: 35, zIndex: 4 },
-            animate: { position: "absolute", top: 150, left: 35, zIndex: 4 },
+            initial: { position: "absolute", top: 600, zIndex: 4 },
+            animate: { position: "absolute", top: 150, zIndex: 4 },
             exit: { opacity: 0 },
             transition: { duration: 0.5, delay: 1.9 }
-          }
+          },
+          className: 'max-w-fit left-[25px] md:left-[30px] lg:left-[35px] w-[200px] md:w-[245px] lg:w-[295px]'
         },
       ],
       header: 'Batch Scanning',
@@ -140,11 +146,12 @@ export const Homepage: HomepageType = {
         {
           imgSrc: 'https://res.cloudinary.com/droheqpxn/image/upload/v1717357129/hubx/Group_41_bknzmv.png',
           animation: {
-            initial: { y: 10, x: 15, opacity: 0, scale: 0, zIndex: 50 },
-            animate: { y: 10, x: 15, opacity: 1, scale: 1, zIndex: 50 },
+            initial: { opacity: 0, scale: 0, zIndex: 50, transform: 'revert-layer' },
+            animate: { opacity: 1, scale: 1, zIndex: 50, transform: 'revert-layer' },
             exit: { opacity: 0 },
             transition: { duration: 0.5, delay: 1.5 }
-          }
+          },
+          className: "max-w-fit w-[28px] h-[240px] lg:w-[42px] lg:h-[360px] lg:w-auto translate-x-[15px] translate-y-[35px]"
         },
         {
           imgSrc: 'https://res.cloudinary.com/droheqpxn/image/upload/v1717356966/hubx/frames_y4qsbb.png',
@@ -153,16 +160,18 @@ export const Homepage: HomepageType = {
             animate: { y: 0, zIndex: 40 },
             exit: { opacity: 0 },
             transition: { duration: 1, delay: 0.5 }
-          }
+          },
+          className: 'max-w-fit w-[250px] md:w-[300px] lg:w-auto'
         },
         {
           imgSrc: 'https://res.cloudinary.com/droheqpxn/image/upload/v1717357128/hubx/Group_s42_z5dbt3.png',
           animation: {
-            initial: { y: 10, x: -15, opacity: 0, scale: 0, zIndex: 50 },
-            animate: { y: 10, x: -15, opacity: 1, scale: 1, zIndex: 50 },
+            initial: { opacity: 0, scale: 0, zIndex: 50, transform: 'revert-layer' },
+            animate: { opacity: 1, scale: 1, zIndex: 50, transform: 'revert-layer' },
             exit: { opacity: 0 },
             transition: { duration: 0.5, delay: 1.8 }
-          }
+          },
+          className: 'max-w-fit w-[28px] h-[240px] lg:w-[42px] lg:h-[360px] translate-x-[-15px] translate-y-[35px]'
         }
       ],
       header: 'Advanced fılters',
@@ -180,7 +189,8 @@ export const Homepage: HomepageType = {
             animate: { y: 0, zIndex: 40 },
             exit: { opacity: 0 },
             transition: { duration: 1, delay: 0.5 }
-          }
+          },
+          className: 'max-w-fit w-[230px] md:w-[300px] lg:w-auto'
         },
         {
           imgSrc: 'https://res.cloudinary.com/droheqpxn/image/upload/v1717357961/hubx/ss_xatdvp.png',
@@ -189,34 +199,38 @@ export const Homepage: HomepageType = {
             animate: { bottom: 40, position: "absolute", x: -35, opacity: 1, scale: 1, zIndex: 50 },
             exit: { opacity: 0 },
             transition: { duration: 0.5, delay: 1.5 }
-          }
+          },
+          className: 'max-w-fit !bottom-[10px] lg:!bottom-[40px]  w-[20px] lg:w-[40px]'
         },
         {
           imgSrc: 'https://res.cloudinary.com/droheqpxn/image/upload/v1717357961/hubx/sss_tzaaww.png',
           animation: {
-            initial: { bottom: -100, position: "absolute", x: 45, opacity: 0, scale: 0, zIndex: 50 },
-            animate: { bottom: 25, position: "absolute", x: -25, opacity: 1, scale: 1, zIndex: 50 },
+            initial: { bottom: -100, position: "absolute", x: 45, opacity: 0, scale: 0, transform: 'revert-layer' },
+            animate: { bottom: 25, position: "absolute", x: -25, opacity: 1, scale: 1, transform: 'revert-layer' },
             exit: { opacity: 0 },
             transition: { duration: 0.5, delay: 1.8 }
-          }
+          },
+          className: 'max-w-fit w-[100px] z-50 lg:w-auto translate-x-[-15px] !bottom-[0px] lg:!bottom-[25px] lg:translate-x-[-25px]'
         },
         {
           imgSrc: 'https://res.cloudinary.com/droheqpxn/image/upload/v1717357962/hubx/dsad_wkizcr.png',
           animation: {
-            initial: { bottom: -100, position: "absolute", x: 220, opacity: 0, scale: 0, zIndex: 50 },
-            animate: { bottom: 60, position: "absolute", x: 110, opacity: 1, scale: 1, zIndex: 50 },
+            initial: { bottom: -100, position: "absolute", x: 220, opacity: 0, scale: 0, transform: 'revert-layer' },
+            animate: { bottom: 60, position: "absolute", opacity: 1, scale: 1, transform: 'revert-layer' },
             exit: { opacity: 0 },
             transition: { duration: 0.5, delay: 2.1 }
-          }
+          },
+          className: 'max-w-fit w-[80px] z-50 lg:w-auto !translate-x-[75px] !bottom-[25px] lg:!bottom-[60px] lg:!translate-x-[110px]'
         },
         {
           imgSrc: 'https://res.cloudinary.com/droheqpxn/image/upload/v1717357964/hubx/ddsds_cniqqk.png',
           animation: {
             initial: { bottom: -100, position: "absolute", x: 200, opacity: 0, scale: 0, zIndex: 50 },
-            animate: { bottom: 25, position: "absolute", x: 235, opacity: 1, scale: 1, zIndex: 50 },
+            animate: { bottom: 25, position: "absolute", opacity: 1, scale: 1, zIndex: 50 },
             exit: { opacity: 0 },
             transition: { duration: 0.5, delay: 2.4 }
-          }
+          },
+          className: 'max-w-fit w-[100px] z-50 lg:w-auto !translate-x-[155px] !bottom-[0px] lg:!bottom-[25px] lg:!translate-x-[235px]'
         }
       ],
       header: 'Export & Share',

@@ -25,4 +25,5 @@ export interface Section {
 export interface SectionImages {
   imgSrc: string;
   animation: AnimationProps;
+  className?: string;
 }
