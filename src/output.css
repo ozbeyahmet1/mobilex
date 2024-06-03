@@ -723,6 +723,10 @@ video {
   height: auto;
 }
 
+.h-\[200px\] {
+  height: 200px;
+}
+
 .w-\[100px\] {
   width: 100px;
 }
@@ -1084,6 +1088,10 @@ body {
 
   .lg\:h-\[482px\] {
     height: 482px;
+  }
+
+  .lg\:h-\[500px\] {
+    height: 500px;
   }
 
   .lg\:w-\[245px\] {

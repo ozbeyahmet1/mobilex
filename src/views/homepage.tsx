@@ -219,7 +219,13 @@ export default function HomepageView() {
           return (
             <Tab
               key={tab.id}
-              icon={<img src={selectedTab === tab.id ? tab.iconSrcSelected : tab.iconSrc} />}
+              icon={
+                <img
+                  src={
+                    selectedTab === tab.id ? tab.iconSrcSelected : tab.iconSrc
+                  }
+                />
+              }
               selected={selectedTab === tab.id}
               onClick={() => {
                 setSelectedTab(tab.id);
