@@ -1,13 +1,12 @@
 import styles from './App.module.css';
+import HomepageView from './views/homepage';
 
 export function App() {
   return (
     <>
-      <header>
-        <h1>HubX Frontend Assignment</h1>
-      </header>
-
-      <main className={styles.main}></main>
+      <main className={styles.main}>
+        <HomepageView />
+      </main>
     </>
   );
 }
