@@ -6,36 +6,37 @@ export const Homepage: HomepageType = {
       id: 0,
       selected: true,
       text: 'Document Scanner',
-      iconSrc:
-        'https://res.cloudinary.com/droheqpxn/image/upload/v1717295397/hubx/Time_Circle_fuhl6g.svg',
+      iconSrc: 'https://res.cloudinary.com/droheqpxn/image/upload/v1717295397/hubx/Time_Circle_fuhl6g.svg',
+      iconSrcSelected: 'https://res.cloudinary.com/droheqpxn/image/upload/v1717387581/hubx/Time_Circle_arnoh3.svg',
+
     },
     {
       id: 1,
       selected: false,
       text: 'Sign & Stamp',
-      iconSrc:
-        'https://res.cloudinary.com/droheqpxn/image/upload/v1717116276/hubx/Time_Circle_sdihqz.svg',
+      iconSrc: 'https://res.cloudinary.com/droheqpxn/image/upload/v1717116276/hubx/Time_Circle_sdihqz.svg',
+      iconSrcSelected: 'https://res.cloudinary.com/droheqpxn/image/upload/v1717388332/hubx/Time_Circle_ewnqxe.svg',
     },
     {
       id: 2,
       selected: false,
       text: 'Batch Scanning',
-      iconSrc:
-        'https://res.cloudinary.com/droheqpxn/image/upload/v1717295527/hubx/scanner_1_jdhnlc.svg',
+      iconSrc: 'https://res.cloudinary.com/droheqpxn/image/upload/v1717295527/hubx/scanner_1_jdhnlc.svg',
+      iconSrcSelected: 'https://res.cloudinary.com/droheqpxn/image/upload/v1717388366/hubx/Time_Circle_paww2w.svg',
     },
     {
       id: 3,
       selected: true,
       text: 'Advanced Filters',
-      iconSrc:
-        'https://res.cloudinary.com/droheqpxn/image/upload/v1717296312/hubx/Time_Circle_cqooxa.svg',
+      iconSrc: 'https://res.cloudinary.com/droheqpxn/image/upload/v1717296312/hubx/Time_Circle_cqooxa.svg',
+      iconSrcSelected: 'https://res.cloudinary.com/droheqpxn/image/upload/v1717388409/hubx/Time_Circle_xksrai.svg',
     },
     {
       id: 4,
       selected: true,
       text: 'Export & Share',
-      iconSrc:
-        'https://res.cloudinary.com/droheqpxn/image/upload/v1717296406/hubx/Time_Circle_pl4sq5.svg',
+      iconSrc: 'https://res.cloudinary.com/droheqpxn/image/upload/v1717296406/hubx/Time_Circle_pl4sq5.svg',
+      iconSrcSelected: 'https://res.cloudinary.com/droheqpxn/image/upload/v1717388443/hubx/Time_Circle_lmailo.svg',
     },
   ],
   sections: [

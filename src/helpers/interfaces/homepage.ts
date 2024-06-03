@@ -9,6 +9,7 @@ export interface Tab {
   id: number;
   selected: boolean;
   iconSrc: string;
+  iconSrcSelected: string;
   text: string;
 }
 

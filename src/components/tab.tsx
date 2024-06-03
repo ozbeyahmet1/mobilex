@@ -61,7 +61,7 @@ export default function Tab({ selected, icon, text, onClick }: TabProps) {
 
   return (
     <div
-      className={`w-fit cursor-pointer flex-1 flex items-center gap-4 py-8 pl-14 z-50 relative border-solid border-x-[1px] border-y-2 hover:border-blue transition-all duration-300 ${selected ? 'bg-blue-100' : 'bg-white'} `}
+      className={`w-fit cursor-pointer flex-1 flex items-center gap-4 py-8 px-8 2xl:px-14 z-50 relative border-solid border-x-[1px] border-y-2 hover:border-blue transition-all duration-300 ${selected ? 'bg-blue-100' : 'bg-white'} `}
       onClick={onClick}
     >
       <div className="flex items-center justify-center">

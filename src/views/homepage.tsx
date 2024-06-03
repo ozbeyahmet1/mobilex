@@ -189,10 +189,16 @@ function ExportAndShare({
 }
 
 export default function HomepageView() {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
   const [selectedTab, setSelectedTab] = React.useState(0);
   return (
     <div className="mt-14 lg:mt-32 ">
-      <div className="container mx-auto">
+      <div className="container mx-auto h-auto md:h-[480px] ">
         {Homepage.sections.map((section) => {
           if (section.id === 'document-scanner' && selectedTab === 0) {
             return <DocumentScannerSection key={section.id} {...section} />;
@@ -213,9 +219,12 @@ export default function HomepageView() {
           return (
             <Tab
               key={tab.id}
-              icon={<img src={tab.iconSrc} />}
+              icon={<img src={selectedTab === tab.id ? tab.iconSrcSelected : tab.iconSrc} />}
               selected={selectedTab === tab.id}
-              onClick={() => setSelectedTab(tab.id)}
+              onClick={() => {
+                setSelectedTab(tab.id);
+                scrollToTop();
+              }}
               text={tab.text}
             />
           );
